@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a0f;
+    color: white;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #1a1a2e, #0a0a0f);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    background: linear-gradient(90deg, #00f5ff, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: #00f5ff;
+    cursor: pointer;
+}
+
+/* SKILLS */
+.tags span {
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    font-size: 14px;
+}
+
+/* IMAGES - FIXED */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Project images */
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+
+    margin: 20px auto;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.project-img:hover {
+    transform: scale(1.03);
+}
+.traced-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.traced-grid img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.traced-grid img:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 450px;
+}
